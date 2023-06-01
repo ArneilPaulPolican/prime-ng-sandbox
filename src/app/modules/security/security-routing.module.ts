@@ -10,6 +10,7 @@ const routes: Routes = [
     component: SecurityComponent,
     children: [
       { path: '', component: LoginComponent },
+      { path: 'login', component: LoginComponent },
     ]
   }
 ];

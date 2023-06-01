@@ -9,18 +9,29 @@ import { SalesComponent } from './components/sales/sales.component';
 import { ApplicationRoutingModule } from './application-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
+//component
+import { SidebarModule } from 'primeng/sidebar';
+import { SidebarComponentComponent } from './sidebar-component/sidebar-component.component';
+import { MenuModule } from 'primeng/menu';
+import { MenubarModule } from 'primeng/menubar';
+import { ButtonModule } from 'primeng/button';
 @NgModule({
   declarations: [
     ApplicationComponent,
     DashboardComponent,
     SalesComponent,
-    PurchasesComponent
+    PurchasesComponent,
+    SidebarComponentComponent
   ],
   imports: [
     CommonModule,
-    BrowserModule,
     ApplicationRoutingModule,
     HttpClientModule,
+    // component
+    SidebarModule,
+    MenuModule,
+    MenubarModule,
+    ButtonModule,
   ],
   providers:[
     ApplicationRouterActivate,
